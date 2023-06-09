@@ -36,7 +36,7 @@ resource "aws_instance" "frazer-ec2" {
     ]
 
     connection {
-      type        = "ssh"
+      type   = "ssh"
       user        = "ubuntu"
       private_key = file("/Users/sadofrazer/Données/DevOps/AWS/.aws/fsa-cloud4-kp.pem")
       host        = self.public_ip

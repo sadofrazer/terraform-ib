@@ -22,7 +22,7 @@ resource "aws_instance" "frazer-ec2" {
   key_name        = "fsa-cloud4-kp"
   security_groups = ["${aws_security_group.my_sg.name}"]
   tags = {
-    Name = "${var.author}-ec2-web"
+    Name = "${var.author}-ec2-web-${var.env}"
   }
 
 
